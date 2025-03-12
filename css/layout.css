@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar Layout */
+.navbar {
+  padding: 10px 20px;                      /* Padding for navbar */
+  background-color: #8b0000;                /* Dark red background */
+  display: flex;                            /* Flexbox layout */
+  align-items: center;                      /* Center the navbar items vertically */
+  justify-content: space-between;           /* Space between the logo and title */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add a shadow below the navbar */
+  transition: box-shadow 0.3s ease;          /* Smooth transition for shadow effect */
+}
+
+/* Navbar Logo Image */
+.nav-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: -7px;
+  border-radius: 50%;                      /* Round the logo */
+  object-fit: cover;                       /* Ensure the image covers the area */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Light shadow around the logo */
+  transition: box-shadow 0.3s ease;          /* Smooth transition for shadow */
+}
+
+/* Navbar Title Text */
+.nav-title {
+  font-size: 1.5rem;                        /* Font size for the title */
+  font-weight: bold;                        /* Bold title text */
+  color: white;                             /* White text color */
+  transition: transform 0.3s ease;           /* Smooth transition for scaling effect */
+}
+
+/* Hover effect for Navbar Title */
+.nav-title:hover {
+  transform: scale(1.05);                    /* Slight scale effect on hover */
+  color: white;                            /* Change title color on hover */
+}
+
+/* Hover effect for Logo */
+.nav-logo:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Hover effect for Navbar */
+.navbar:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+}
+
+/* Container for the "Research Projects" section */
+.research-projects-container {
+  text-align: center;           /* Center the title text */
+  padding: 40px 0;              /* Add space around the section */
+  background-color: #f1f1f1;    /* Light background color for the section */
+  border-radius: 8px;           /* Optional: Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Initial shadow for the container */
+  transition: box-shadow 0.3s ease;  /* Smooth transition for shadow on hover */
+}
+
+/* Hover effect for the "Research Projects" container */
+.research-projects-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover for more depth */
+}
+
+/* Title styling for "Research Projects" */
+.section-title {
+  font-size: 35px;             /* Larger title text */
+  font-weight: bold;           /* Bold title */
+  color: #333;                 /* Dark text color */
+  margin-bottom: 20px;         /* Space between the title and buttons */
+  margin-top: -5px;
+}
+
+/* Container for the buttons */
+.button-container-main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* Center buttons horizontally */
+  align-items: center;          /* Align buttons vertically */
+  gap: 20px;                    /* Add space between buttons */
+}
+.button-container-project-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* Center buttons horizontally */
+  align-items: center;          /* Align buttons vertically */
+  margin-top: 15px;
+  gap: 20px;                    /* Add space between buttons */
+}
+
+/* Styling for the buttons */
+.button {
+  display: inline-block;        /* Ensure buttons are inline but can accept padding */
+  padding: 12px 24px;           /* Adjust button padding */
+  background-color: #8b0000;    /* Button background color */
+  color: white;                 /* Button text color */
+  font-size: 16px;              /* Button text size */
+  font-weight: bold;            /* Button text weight */
+  text-decoration: none;        /* Remove underline */
+  border-radius: 4px;           /* Rounded corners */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow to the button */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #ad0000;    /* Darker button color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Bigger shadow on hover */
+}
+
+/* Styling for the button text */
+.button-text {
+  font-size: 1rem;
+  color: white;
+}
+
+
+
+
+/* Main Page Layout */
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin: 225px 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+
+
+/* Portfolio Header */
+#portfolio-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #f1f1f1;       /* Light grey background similar to the button tab */
+  padding: 40px;                    /* Space inside the header */
+  border-radius: 8px;               /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: box-shadow 0.3s ease;  /* Smooth transition for shadow on hover */
+}
+
+/* Portfolio Header Image Container */
+#portfolio-header-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+/* Portfolio Image Styling */
+.portfolio-header-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;            /* Make the image circular */
+  object-fit: cover;             /* Make the image cover the area without distortion */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Light shadow around the image */
+}
+
+/* Portfolio Header Text Container */
+#portfolio-header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  flex-basis: 50%;
+}
+
+/* Hover Effect for Portfolio Header */
+#portfolio-header:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover for depth */
+}
+
+
+
+
+
+/* Container for the entire project section */
+.research-project {
+  background-color: #f1f1f1;                /* Light grey background */
+  padding: 20px;                             /* Padding inside the project container */
+  margin: 20px 0;                            /* Vertical spacing between project containers */
+  border-radius: 8px;                        /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  max-width: 800px;                          /* Limit the width of the container */
+  margin-left: auto;                         /* Center the container horizontally */
+  margin-right: auto;                        /* Center the container horizontally */
+  transition: box-shadow 0.3s ease;          /* Smooth transition for shadow on hover */
+}
+
+/* Hover effect for the project container */
+.research-project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover for more depth */
+}
+/* Project title styling */
+.project-title-description {
+  font-size: 24px;                           /* Font size for the project title */
+  font-weight: bold;                         /* Bold title */
+  color: #8b0000;                            /* Dark red color for the title */
+  margin-top: 15px;
+  margin-bottom: 15px;                       /* Space below the title */
+  line-height: 1.4;                          /* Line height for better spacing */
+  text-align: center;                        /* Center align the title */
+}
+
+
+/* Project description styling */
+.project-description {
+  font-size: 18px;                           /* Font size for description */
+  line-height: 1.6;                          /* Line height for better spacing */
+  color: #8b0000;                              /* White text */
+  text-align: justify;                       /* Justified text alignment */
+  margin-bottom: 20px;                       /* Space below the description */
+}
+
+/* Container for the project links */
+.project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;                       /* Center the links */
+  gap: 5px;                                  /* Space between the links */
+  margin-top: 20px;                          /* Top margin to space out the links */
+}
+
+/* Styling for the individual project links */
+.project-link {
+  font-size: 16px;                           /* Font size for links */
+  text-decoration: none;                     /* Remove underline */
+  color: #8b0000;                            /* Cyan color for the links */
+  font-weight: bold;                         /* Bold link text */
+  transition: color 0.3s ease;               /* Smooth transition for color change */
+}
+
+/* Hover effect for the project links */
+.project-link:hover {
+  color: #ad0000;                            /* Darker cyan color when hovered */
+}
+
+/* Project citation styling */
+.project-citation {
+  font-size: 14px;                           /* Smaller font size for citations */
+  color: #8b0000;                              /* White text */
+  text-align: left;                          /* Left-align the citation */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .research-project {
+    padding: 15px;                           /* Reduce padding on smaller screens */
+  }
+
+  .project-title {
+    font-size: 20px;                         /* Adjust font size for smaller screens */
+  }
+
+  .project-description {
+    font-size: 14px;                         /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1600px) {
+  #main-content {
+    margin: 225px 275px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1200px) {
+  #main-content {
+    margin: 225px 175px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1000px and below) */
+@media only screen and (max-width: 1000px) {
+  #main-content {
+    margin: 225px 75px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  #main-content {
+    margin: 150px 50px;
+  }
+
+  #portfolio-header {
+    flex-direction: column;
+  }
+
+  .project-card {
+    max-width: calc((100% - 16px) / 2);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+  #main-content {
+    margin: 125px 20px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="assets/images/headshot.jpg" />
+    <title>Christian O. Bernal Zelaya's Personal Website</title>
+    <meta name="description" content="A website for Christian O. Bernal Zelaya.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/utilities.css">
+
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="nav-title-link" href="/index.html">
+            <!-- Add image before the title text -->
+            <img src="/assets/images/headshot.jpg" alt="Logo" class="nav-logo" />
+            <span class="nav-title">Christian O. Bernal Zelaya's Personal Website</span>
+            <a class="button" href="mailto:cbernalz@uci.edu">
+                <span class="button-text">Contact Me</span>
+            </a>
+        </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+        <div class="research-project">
+            <p class="project-title-description">Forecasting healthcare utilization using wastewater surveillance data</p>
+            <p class="project-description">
+                Here we construct a Bayesian mechanistic model that uses hospitalizations caused by a pathogen and concentration of the pathogen in wastewater to forecast healthcare utilization.  The latent parameters are constructed using an ordinary differential equation compartmental model.  We compare our model with one that is not informed by wastewater data using Covid-19 data from several counties.  A simulation study is also conducted to analyze the performance of our model.  We added our model as a Julia package with a github repo and a simplified demo on how it can be used.  This package is still under development.  We are also working with California Department of Public Health to implement our model in their CalCat disease surveillance system.  A manuscript is currently being prepared.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/cbernalz/UCIWWEIHR.jl" class="project-link" target="_blank">GitHub package repository</a>
+                <a href="https://github.com/cbernalz/UCIWWEIHR_demo" class="project-link" target="_blank">GitHub package demo repository</a>
+                <a href="https://cbernalz.github.io/UCIWWEIHR.jl/dev/" class="project-link" target="_blank">Package website</a>
+                <a href="https://cbernalz.github.io/UCIWWEIHR.jl/dev/" class="project-link" target="_blank">Github public paper repository(Not active yet)</a>
+                <a href="https://skylab4.cdph.ca.gov/calcat/" class="project-link" target="_blank">CalCat website</a>
+            </div>
+            <div class="button-container-project-page">
+                <a class="button" href="/pages/research.html">
+                    <span class="button-text">Back to Research</span>
+                </a>
+            </div>
+        </div>          
+
+    </div>          
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <a class="icon-link" target="_blank" href="https://github.com/cbernalz">
+            <image src="/assets/icons/github-mark.svg" class="footer-icon" />
+        </a>
+        <a class="icon-link" target="_blank"
+                    href="https://www.linkedin.com/in/christian-bernal-zelaya-2a410b18a/">
+            <image src="/assets/icons/linkedin-xxl.svg" class="footer-icon" />
+        </a>
+        <a class="icon-link" href="mailto:cbernalz@uci.edu">
+            <image src="/assets/icons/mail.svg" class="footer-icon" />
+        </a>
+    </div>
+
+</body>
+
+</html>
