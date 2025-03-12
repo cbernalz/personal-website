@@ -1,0 +1,8 @@
+**/*.synctex.gz
+**/*.out
+**/*.tex
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+tex/cv/icons/*
