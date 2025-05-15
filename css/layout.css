@@ -230,6 +230,13 @@ body {
   text-align: justify;                       /* Justified text alignment */
   margin-bottom: 20px;                       /* Space below the description */
 }
+.project-outreach {
+  font-size: 18px;                           /* Font size for description */
+  line-height: 1.6;                          /* Line height for better spacing */
+  color: #8b0000;                              /* White text */
+  text-align: justify;                       /* Justified text alignment */
+  margin-bottom: 20px;                       /* Space below the description */
+}
 
 /* Container for the project links */
 .project-links {
